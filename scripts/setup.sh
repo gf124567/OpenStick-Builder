@@ -14,27 +14,28 @@ apt upgrade -qqy
 apt autoremove -qqy
 apt install -qqy --no-install-recommends \
     bridge-utils \
-    dnsmasq \
-    hostapd \
-    iptables \
-    libconfig9 \
-    locales \
-    modemmanager \
-    netcat-traditional \
-    net-tools \
-    network-manager \
-    openssh-server \
-    qrtr-tools \
-    rmtfs \
-    sudo \
-    systemd-timesyncd \
-    tzdata \
-    wireguard-tools \
-    wpasupplicant
-apt clean
-rm -rf /var/lib/apt/lists/*
+        dnsmasq \
+            hostapd \
+                iptables \
+                    libconfig11 \
+                        locales \
+                            modemmanager \
+                                netcat-traditional \
+                                    net-tools \
+                                        network-manager \
+                                            openssh-server \
+                                                qrtr-tools \
+                                                    rmtfs \
+                                                        sudo \
+                                                            systemd-timesyncd \
+                                                                tzdata \
+                                                                    wireguard-tools \
+                                                                        wpasupplicant
+                                                                        apt clean
+                                                                        rm -rf /var/lib/apt/lists/*
 
-passwd -d root
+                                                                        passwd -d root
 
-echo user:1::::/home/user:/bin/bash | newusers
-echo 'user ALL=(ALL:ALL) NOPASSWD: ALL' > /etc/sudoers.d/user
+                                                                        echo user:1::::/home/user:/bin/bash | newusers
+                                                                        echo 'user ALL=(ALL:ALL) NOPASSWD: ALL' > /etc/sudoers.d/user
+                                                                        
